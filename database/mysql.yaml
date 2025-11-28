@@ -39,6 +39,7 @@ metadata: # kpt-merge: oai-core/mysql
   annotations:
     internal.kpt.dev/upstream-identifier: '|PersistentVolumeClaim|oai-core|mysql'
 spec:
+  storageClassName: local-path
   accessModes:
   - "ReadWriteOnce"
   resources:
